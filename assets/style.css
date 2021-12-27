@@ -1,0 +1,20 @@
+.style-text {
+    text-align: center;
+    color: white;
+}
+.type{
+    background-color: rgb(114, 48, 238);
+}
+.search-text {
+    font-size: 28px;
+    font-weight: 700;
+}
+.container-style {
+    height: 130px;
+    width: 130px;
+    position: relative;
+    bottom: 150px;
+}
+.sized {
+    height: 10px;
+}
