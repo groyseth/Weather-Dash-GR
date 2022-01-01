@@ -3,18 +3,51 @@
     color: white;
 }
 .type{
-    background-color: rgb(114, 48, 238);
+    background-color: rgb(98, 89, 228);
 }
 .search-text {
     font-size: 28px;
     font-weight: 700;
 }
 .container-style {
-    height: 130px;
-    width: 130px;
-    position: relative;
-    bottom: 150px;
+    height: 248px;
+    width: 70%;
+    position: absolute;
+    bottom: 37%;
+    /* top:  -200px; */
+    /* float: right; */
+    left: 28%;
+    border: 3px solid black;
 }
+
 .sized {
     height: 10px;
+}
+#box {
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    right: -9%;
+}
+box {
+    padding: 2px 2px;
+    border: 3px solid black;
+    margin: 1px 1px;
+    width: 12%;
+    height: 12%;
+}
+.imgclass {
+    width: 40px;
+}
+.icons {
+    background-color:rgb(98, 89, 228)
+}
+.listSide {
+    width: 40px;
+}
+/* button {
+    width: 30px;
+} */
+li {
+    width: 30px;
 }
