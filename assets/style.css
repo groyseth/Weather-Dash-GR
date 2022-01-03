@@ -24,17 +24,18 @@
     height: 10px;
 }
 #box {
-    justify-content: center;
-    position: relative;
-    top: 100px;
-    right: -9%;
+    /* justify-content: center; */
+    position: absolute;
+    top: 68%;
+    right: 16%;
 }
 box {
-    padding: 2px 2px;
+    padding: 3px 2px;
     border: 3px solid black;
     margin: 1px 1px;
-    width: 12%;
-    height: 12%;
+    width: 170px;
+    height: 100%;
+   
 }
 .imgclass {
     width: 40px;
@@ -43,11 +44,17 @@ box {
     background-color:rgb(98, 89, 228)
 }
 .listSide {
-    width: 40px;
+    width: 100%;
 }
 /* button {
     width: 30px;
 } */
-li {
-    width: 30px;
+.favorable{
+    color: blue;
+}
+.moderate{
+    color: green;
+}
+.severe{
+    color: red;
 }
