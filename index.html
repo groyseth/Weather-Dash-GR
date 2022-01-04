@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
 
     <title>Weather Dashboard</title>
@@ -26,7 +27,8 @@
             <label for="citySearch" class="search-text">Search for a City:</label>
             <input type="text" class="form-control searchedCity" id="citySearch">
         </div>
-        <button type="submit" class="btn btn-primary subBtn">Submit</button>
+        <button type="submit" class="btn btn-primary subBtn">Submit</button><br>
+        <button onclick="deleteLocal()" class="btn btn-primary clearBtn">Clear</button>
     </form>
     <!-- <div class="container row"> -->
     <div class=" container sized border-top border-5 border-dark m-3 w-25 h-25">
@@ -39,10 +41,10 @@
 
     </div>
 
-    <div class="container container-style column ">
+    <div class="container container-style column " >
         <!-- Content here -->
-        <!-- find uv -->
-        <h1 class="name">City: </h1>
+        <!-- current weather -->
+        <h1 class="name">Name:  </h1>
         <h1 class="timezone">Date: </h1>
         <p1 class="temp">Temp: </p1><br>
         <p1 class="wind">Wind: </p1><br>
@@ -100,7 +102,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
     
 
     <script src="./assets/weather.js"></script>

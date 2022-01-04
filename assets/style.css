@@ -1,9 +1,12 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .style-text {
     text-align: center;
     color: white;
 }
 .type{
-    background-color: rgb(98, 89, 228);
+    background-color: blue;
 }
 .search-text {
     font-size: 28px;
@@ -14,17 +17,15 @@
     width: 70%;
     position: absolute;
     bottom: 37%;
-    /* top:  -200px; */
-    /* float: right; */
     left: 28%;
     border: 3px solid black;
+    font-size: 35px;
 }
 
 .sized {
     height: 10px;
 }
 #box {
-    /* justify-content: center; */
     position: absolute;
     top: 68%;
     right: 16%;
@@ -41,14 +42,17 @@ box {
     width: 40px;
 }
 .icons {
-    background-color:rgb(98, 89, 228)
+    background-color:blue;
 }
-.listSide {
+.listSide p {
     width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 5px;
 }
-/* button {
-    width: 30px;
-} */
+
 .favorable{
     color: blue;
 }
@@ -57,4 +61,7 @@ box {
 }
 .severe{
     color: red;
+}
+.btn {
+    padding-top: 5px;
 }
