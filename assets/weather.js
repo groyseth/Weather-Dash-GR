@@ -12,13 +12,11 @@ if (localStorage.getItem("city")) {
     cityHistory = JSON.parse(localStorage.getItem("city"))
 }
 
-// var long = "";
-// var latt = "";
+
 console.log(city)
 
 function searchCityByInput(city) {
-    // var latt;
-    // var long;
+    
     fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + APIKey)
         .then(function (response) {
            
@@ -31,31 +29,15 @@ function searchCityByInput(city) {
                alert("not a city!")
                return
            }
-           
-               
-           
             console.log(data);
-            // var tempValue = data['main']['temp'];
-            // var nameInput = data['name'];
-            // var windValue = data['wind']['speed'];
-            // var humidityValue = data['main']['humidity']
-            // var timeValue = data['timezone']
             
-
-
-            // nameVal.innerHTML = nameInput;
-            // temp.innerHTML = "Temp: " + tempValue + " °F";
-            // wind.innerHTML = "Wind: " + windValue + " MPH";
-            // humidity.innerHTML = "Humidity: " + humidityValue + " %";
             $(".name").text(data.name);
             $(".timezone").text(moment().format(" MM/D/YYYY"));
             $(".temp").text("Temp: " + data.main.temp + "℉");
             $(".wind").text("Wind: " + data.wind.speed + " MPH");
             $(".humidity").text("Humidity: " + data.main.humidity + " %");
 
-            // timeZone.innerHTML = timeValue;
-            // timeZone.innerHTML = (new Date(data.dt*1000-(data.timezone*1000))); // minus
-            // timeZone.innerHTML = moment().format(" MM/D/YYYY");
+            
             var latt = data.coord.lat;
             var long = data.coord.lon;
 
@@ -107,10 +89,7 @@ function searchCityByInput(city) {
                 });
         })
     
-    // add catch!
-    // .catch(error => {
-    //     console.log(error)
-    // });
+    
 
 }
 
@@ -135,18 +114,12 @@ function getInputValue(e) {
 
 
 }
-
+// creats a list of the user input
 renderHistory()
 function renderHistory() {
 olSearch.innerHTML = ""
     for (let i = 0; i < cityHistory.length; i++) {
-        // if(cityHistory[i] === cityHistory[i]){
-        //     console.log("yes")
-        // }else{
-        //     console.log("no")
-        // }
-
-
+       
         var paragraph = document.createElement("p");
 
         paragraph.innerHTML = cityHistory[i];
@@ -154,26 +127,18 @@ olSearch.innerHTML = ""
         paragraph.addEventListener("click", function (e) {
             console.log(e.target.textContent)
             searchCityByInput(e.target.textContent)
-            
-            
         })
-    //    if city equils it self then stop
 
         olSearch.appendChild(paragraph);
     }
     
 }
 
-
+// deletes the localstorage
 function deleteLocal(){
     localStorage.clear()
 }
 document.querySelector(".subBtn").addEventListener("click", getInputValue)
-
-
-// document.querySelector(".subBtn").addEventListener("click", listInputValue)
-// timeOfCity()
-
 
 // logic cant dup city
 //   if statement
